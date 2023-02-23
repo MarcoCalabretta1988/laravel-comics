@@ -4,6 +4,6 @@
 
 @section ('content')
 <section id="index">
-<h1>INDEX</h1>
+<h1>HOME PAGE</h1>
 </section>
 @endsection

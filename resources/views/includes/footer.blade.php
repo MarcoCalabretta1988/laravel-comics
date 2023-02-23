@@ -6,17 +6,17 @@
                 <div class="footer-col">
                     <h3>DC COMICS</h3>
                     <ul>
-                        <li><a href="#">Characters</a> </li>
-                        <li><a href="#">Comics</a> </li>
-                        <li><a href="#">Movies</a> </li>
-                        <li><a href="#">Tv</a> </li>
-                        <li><a href="#">Games</a> </li>
-                        <li><a href="#">Videos</a> </li>
-                        <li><a href="#">News</a> </li>
+                        <li><a href="{{ route('characters') }}">Characters</a> </li>
+                        <li><a href="{{ route('comics') }}">Comics</a> </li>
+                        <li><a href="{{ route('movies') }}">Movies</a> </li>
+                        <li><a href="{{ route('tv') }}">Tv</a> </li>
+                        <li><a href="{{ route('games') }}">Games</a> </li>
+                        <li><a href="{{ route('videos') }}">Videos</a> </li>
+                        <li><a href="{{ route('news') }}">News</a> </li>
                     </ul>
                     <h3>SHOP</h3>
                     <ul>
-                        <li><a href="#">Shop DC</a> </li>
+                        <li><a href="{{ route('shop') }}">Shop DC</a> </li>
                         <li><a href="#">Shop DC Collectibles</a> </li>
                     </ul>
 
