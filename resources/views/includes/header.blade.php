@@ -1,21 +1,18 @@
+@php
+$links = config('menu');
+@endphp
 
 <header>
         <nav class="container">
 
             <figure>
-                <a href="#"><img src="{{ Vite::asset('resources/images/dc-logo.png')}}" alt="Dc logo"></a>
+                <a href="{{ route('index') }}"><img src="{{ Vite::asset('resources/images/dc-logo.png')}}" alt="Dc logo"></a>
             </figure>
             <ul>
-                <li > <a href="">CHARACTERS </a></li>
-                   <li  class="current"> <a href="">COMICS</a></li>
-                      <li > <a href="">MOVIES </a></li>
-                         <li > <a href="">TV</a></li>
-                            <li > <a href="">GAMES </a></li>
-                            <li > <a href="">COLLECTIBLES </a></li>
-                         <li > <a href="">VIDEOS</a></li>
-                            <li > <a href="">FANS </a></li>
-                             <li > <a href="">NEWS</a></li>
-                            <li > <a href="">SHOP</a></li>
+                @foreach ($links as $link )    
+                <li  class="{{ request()->routeIs($link['route_name']) ? 'current' : ''}}"> <a href="{{ route($link['route_name']) }}">{{$link['title']}}</a></li>
+                @endforeach
+              
             </ul>
         </nav>
 

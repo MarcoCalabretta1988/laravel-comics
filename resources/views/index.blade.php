@@ -3,6 +3,7 @@
 @section ('title', 'Home')
 
 @section ('content')
-
-<h1>Contenuto main</h1>
+<section id="index">
+<h1>INDEX</h1>
+</section>
 @endsection
